@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sec;
+
+    cout << "Masukkan angka >1 (dalam satuan detik): ";
+    cin >> sec;
+
+    int hour = sec / 3600;
+    int remainSec = sec % 3600;
+    int min = remainSec / 60;
+    int finalSec = remainSec % 60;
+
+    cout << "\nHasil Konversi : " << endl;
+    cout << sec << " Detik = " << hour << " Jam, " << min << " Menit, " << finalSec << " Detik. ";
+
+
+    return 0;
+}
